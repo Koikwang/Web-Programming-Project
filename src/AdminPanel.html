@@ -1,0 +1,63 @@
+<!--Web programming project-->
+<!DOCTYPE html> <!--Tell type of the document-->
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="static/AdminPanel.css">
+        <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>Product Admin Panel</title>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="seven" >
+                <section class="images">
+                    <figure>
+                    <a href="http://localhost:4309/Search">
+                        <img src="https://www.7eleven.co.th/static/imgs/logo.svg" style="width: 80px;"> 
+                    </a>    
+                    </figure>
+                </section>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <h1>Admin Panel</h1>
+        
+        <!-- Admin panel -->
+        <div class="container">
+            <!-- Product -->
+            <div class="box">
+                <form action=""> 
+                    <h4><b>Product</b></h4>
+                    <hr>
+                    <!--form-->
+                    <div class="form">
+                        <label for="pro_id">Product ID: </label><input type="text" placeholder="Enter Product ID" class="pattern" name="pro_id" id="pro_id"><br>
+                        <label for="pro_name">Product Name: </label> <input type="text" placeholder="Enter Product Name" class="pattern" name="pro_name" id="pro_name"><br>
+                        <label for="pro_mmpoint">Member Point: </label> <input type="text" placeholder="Enter Member Point" class="pattern" name="pro_mmpoint" id="pro_mmpoint"><br>
+                        <label for="pro_price">Price: </label> <input type="text" placeholder="Enter Price" class="pattern" name="pro_price" id="pro_price"><br>
+                        <label for="pro_type">Product Type: </label> <input type="text" placeholder="Enter Product Type" class="pattern" name="pro_type" id="pro_type"><br>
+                        <label for="pro_info">Information: </label> <input type="text" placeholder="Enter Product Information" class="pattern" name="pro_info" id="pro_info"><br>
+                        <label for="pro_img">Product Image: </label> <input type="text" placeholder="Enter Product Image" class="pattern"name="pro_img" id="pro_img"><br>
+                    </div>
+                
+                    <!-- button -->
+                    <div class="button">
+                        <input type="button" value="Insert" id="pro_insert">
+                        <input type="button" value="Update" id="pro_update">
+                        <input type="button" value="Select" id="pro_select">
+                        <input type="button" value="Select All" id="pro_selecta">
+                        <input type="button" value="Delete" id="pro_delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h5 id="found" class="container"></h5> 
+        <div id="pro_output"></div>
+        <script src="static/callProjectService.js"></script>
+    </body>
+</html>

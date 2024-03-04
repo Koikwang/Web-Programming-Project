@@ -1,0 +1,116 @@
+* /*all*/
+{
+    font-family: 'Times New Roman', sans-serif;
+    flex-wrap: wrap;
+}
+nav /* navigation bar */
+{
+    flex-direction: column;
+}
+
+nav a,.footabout a /* Set text-link color in orange [in navigation bar and footer] */
+{
+    display: block;
+    color: #f26f21;
+    padding: 8px;
+    text-decoration: none;
+}
+nav a:hover,.footabout a:hover /* Set text-link color when mouse hover to be white [in navigation bar and footer] */
+{
+    background-color: #ec1d24;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+nav a:active,.footabout a:active /* Set text-link when active to be the same */
+{
+    text-decoration: none;
+}
+.nav /* Set margin, arrangement, warp elements [in navigation bar] */
+{
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+header img /* 7-11 picture */
+{
+    margin-left: 90px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.icon /* SEt margin for icon */
+{
+    margin-left: 10px;
+}
+.container /* set back ground color, arrangement, spacing for the container */
+{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media (min-width: 992px) /* Setting when screen with is bigger than 992px */
+{
+    .container /* Set container */
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: flex-start;
+    }
+    .member /* Member picture 25% width */
+    {
+        width: 25%;
+        height: auto;
+    }
+    .nav /* Set navigation bar */
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        align-items: center;
+    }
+    #header-logo /* Set logo to stay left */
+    {
+        display: flex;
+        justify-content: left;
+    }
+
+} 
+.container-1,footer /* Set footer arrangement, color, position, and size. */
+{
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 40px;
+    color: white;
+    font-weight: 900px;
+}
+
+.container-1 h2,footer /* Set h2 font color, size, adn background color */
+{
+    color: #f26f21;
+    font-size: 50px;
+    background-color: rgb(255, 200, 168);
+}
+.container-1 a /* Set link-test font size, margin, and remove link-decoration */
+{
+    font-size: 25px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+p /* Set paragraph font size, margin, adn color */
+{
+    font-size: 17px;
+    margin-left: 5px;
+    color: #f26f21;
+}
+.member img /*image of members */
+{
+    margin-top: 20px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

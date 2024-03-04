@@ -1,0 +1,135 @@
+<!-- Search Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the title of the page -->
+    <title>7-Eleven Search Page</title>
+    <link rel="stylesheet" href="static/search.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/getProductBy.js"></script>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+</head>
+
+<!-- body -->
+<body onload="getProductByType('/product')">
+    <!-- This is the header part that has 7-Eleven logo and some social media icons -->
+    <header style="display: flex; flex-direction: row; justify-content: space-around;">
+        <!-- 7-Eleven logo -->
+        <div class="seven">
+        <section class="images">
+            <figure>
+            <img src="https://www.7eleven.co.th/static/imgs/logo.svg" style="width: 80px;"> 
+            </figure>
+        </section>
+        </div>
+        
+        <!--Link to Social media website-->
+        <div class="nav-right" style="display: flex; ">
+            <!--Facebook-->
+            <div>
+                <a href="https://www.facebook.com/7ElevenThailand/">
+                    <img src="static/image-1/fb-icon.png" alt="" class="icon" style="width: 40px;">
+                </a>
+            </div>
+            <!--Youtube-->
+            <div>
+                <a href="https://www.youtube.com/user/7ElevenThailand">
+                    <img src="static/image-1/yt-icon.png" alt="" class="icon" style="width: 40px;">
+                </a>
+            </div>
+            <!--Instagram-->
+            <div>
+                <a href="https://www.instagram.com/7.eleventhailand/?hl=en">
+                    <img src="static/image-1/ig-icon.svg" alt="" class="icon" style="width: 40px;">
+                </a>
+            </div>
+            <!--Setting Admin Panel-->
+            <div>
+                <a href="http://localhost:4309/AdminPanel">
+                    <img src="static/images/setting.png" alt="" class="icon" style="width: 40px;">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- navigation bar -->
+    <!-- This nevigation bar will lead you to the homepage, sign-in, and sign-up page -->
+    <nav class="navbar" style=" display: flex; padding-top: 27px;">
+        <div class="container" style="display: flex; justify-content: center; background-color: rgb(255, 255, 255, 0.9);">  
+            <!--Link to home page-->      
+            <a href="index.html"><i class="home"></i> Home Page</a>
+            <!--Link to sign in-->  
+            <a href="SignIn.html"><i class="sign-in"></i> Sign In</a>
+            <!-- Link to sign up -->
+            <a href="SignUp.html"><i class="sign-up"></i> Sign Up</a>
+        </div>
+    </nav>
+
+    <script src="static/fetchSpoonacular.js"></script>
+        <!-- This is the place where you can find your product items -->
+        <div class="search bar">
+        <input type="text"  class="search input" id="txtSearch" placeholder="🔎︎ Search"> 
+        <button input="submit" onclick="searchMenu(document.getElementById('txtSearch').value)">Search</button>   
+        <h1 id="h1_title"></h1>
+        <div id="resultMenu" style="padding-top:30px; display:flex; flex-direction:row; 
+            flex-wrap: wrap; justify-content: center; text-align: center;"></div>
+    </div>
+
+    <!-- category section -->
+    <div class="container" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        <!--Link to snack catagory-->  
+        <div class="category" onclick="getProductByType('/searchProductType=', 'snack')">
+            <img src="static/images/snack.png" style="width: 80%; align-self: center;">
+            <div class="overlay">
+            <h5 class="text">SNACK</h5>
+            </div>
+        </div>
+        <!--Link to sweet catagory-->  
+        <div class="category" onclick="getProductByType('/searchProductType=', 'sweet')">
+            <img src="static/images/sweet.png" style="width: 80%; align-self: center;">
+            <div class="overlay">
+            <h5 class="text">SWEET</h5>
+            </div>
+        </div> 
+        <!--Link to drink catagory-->  
+        <div class="category" onclick="getProductByType('/searchProductType=', 'drink')">
+            <img src="static/images/drink.png" style="width: 75%; align-self: center;">
+            <div class="overlay">
+            <h5 class="text">DRINK</h5>
+            </div>
+        </div> 
+    </div>
+
+    <!-- # Product -->
+    <h5 id="found" class="container"></h5> 
+    <!-- box -->
+    <main id="output" class="container" style="display: flex; flex-direction: row; flex-wrap: wrap;"></main>
+</body>
+
+<!-- Footer -->
+<footer>
+    <!-- This is the footer part that will link to the home page and about us page -->
+    <a href="index.html"><i class="home-page"></i>Home Page</a> | <a href="Aboutus.html"><i class="about-us"></i>About Us</a>
+</footer>
+</html>
+<!-- END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

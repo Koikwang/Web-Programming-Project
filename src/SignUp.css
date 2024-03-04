@@ -1,0 +1,157 @@
+*
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.brandlogo 
+{
+    height: 140px;
+    width: 140px;
+    background: url("https://www.7eleven.co.th/static/imgs/logo.svg");
+    background-position: center; 
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px #cbced1, -5px -5px 8px white;
+}
+.brandname 
+{
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+}
+header
+{
+    background-color: white;
+    top:0;
+    flex-direction: row;
+    width: 100%; 
+    opacity: 0.85;
+}
+footer
+{
+    bottom: 0;
+    width: 100%;
+    opacity: 0.85;
+    display: flex;
+    margin-bottom: 0;
+}
+.night 
+{ 
+    background: url("https://cdn.mos.cms.futurecdn.net/52jKFvqpbxEF5kBB7Yd3M.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+nav,footer 
+{  
+    margin: 0px;
+    flex-direction: column;
+    font-size: 20px;
+}
+nav a,.footabout a
+{
+    display: block;
+    color: #2f8553;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;  
+}
+nav a:hover,.footabout a:hover
+{
+    background-color: #8ff8de;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav a:active,.footabout a:active  
+{
+    background-color: #00a550;
+    border-radius: 5px;
+}
+.name
+{
+    margin-top: 18px;
+    font-size: 28px;
+}
+body 
+{
+    margin: auto;
+    background: #a9fcd1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}  
+#username
+{
+    margin-top: 0;
+}
+.container
+{   
+    margin: 0;
+    text-align: center;
+    border-radius: 70px;
+    padding: 40px;
+    background: #00a550;
+    opacity: 0.9;
+    font-size: 35px; 
+    display: flex;
+    line-height: 20pt;
+}
+.container input 
+{
+    background: #ffffff;
+    height: 40px;
+    width: 280px;
+    font-size: 18px;
+    color: #565656;
+    margin-top: 0;
+    border-radius: 100px;
+    border-color: #ffffff;
+    box-shadow: inset 3px 3px 3px #cbd1cd, inset -3px -3px 3px white;
+}
+.container label
+{
+    font-size: 25px;
+}
+.botton
+{
+    text-align: center;
+}
+.signupbotton
+{
+    background-color: #a9fcd1;
+    font-size: 35px;
+    width: 160px;
+    height: 50px;
+    color: #00a550;
+    border: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+.haveacc
+{
+    margin: 0;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 5px;
+}
+.privacy
+{
+    font-size: 15px;
+}
+.privacy input
+{   
+    cursor: pointer;
+    width: 13px;
+    box-shadow: none;
+    margin: 0;
+}

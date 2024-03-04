@@ -1,0 +1,248 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    background-color: white;
+}
+
+header {
+    padding: 10px;
+    background-color: white;
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+}
+
+/* change a style of sign in icon when mouse over the button */
+.sign-in-icon:hover {
+    background-color: #8ff8de;
+    text-decoration: none;
+    /* margin: 10px; */
+    border-radius: 15px;
+}
+
+/* determine a style of the sign in icon (this also use for sign up icon) */
+.sign-in-icon {
+    color: #2f8553;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* class day for provide a style and a background image of the body section (dark) */
+.day {
+    background: url(image-1/stardew-valley-bg1.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* class night for provide a style and a background image of the body section (light)*/
+.night { 
+    background: url(image-1/stardew-valley-bg2.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.orange {
+    background-color: #f26f21;
+}
+
+.green {
+    background-color: #00a550;
+}
+ 
+/* the dummy box taht use for visual a layout an icon of the home page */
+.dummy-box-1 {
+    width: 40px;
+    height: 40px;
+    border: dashed 1px;
+    margin: 10px 20px;
+}
+
+/* set a width and height of the partner icon on the index page */
+.partner-icon {
+    width: 60px;
+    margin: 10px 20px;
+}
+
+/* use for align and control content in the partnet section */
+.partner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* set an area for place a main content in the home page */
+.content-area {
+    width: auto;
+    height: 1080px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* set a style to the navigation bar in the header */
+#header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* align and control the navigate icon in the header nav*/
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* align and justify the items in the nav (split to left and right section) */
+.nav-left, .nav-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* style an order button of the homepage*/
+.button-1 {
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* align and justify contents in the news section */
+.content-news {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px
+}
+
+/* align and justity a division of persuasion text in the homepage */
+.start-order {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* determine a picture size version 1 */
+.pic-size-1 {
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* determine a picture size cersion 2 */
+.pic-size-2 {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* set a static width and height of the promoton slide */
+.promotion-slide {
+    /* text-align: left; */
+    width: auto;
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* determine a width and height of the small icon */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px;
+}
+
+.sign-in-icon {
+    padding: 10px 20px;
+}
+
+#order-text {
+    font-size: 16px;
+}
+
+/* For bigger screen */
+@media (min-width: 768px) {
+    #header-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #header-logo {
+        display: flex;
+        justify-content: left;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .content-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .start-order {
+        order: 0;
+    }
+}
+
+/* For bigger screen */
+@media (max-width: 768px) {
+    .promotion-slide {
+        width: auto;
+        max-width: 400px;
+        height: auto;
+    }
+}
