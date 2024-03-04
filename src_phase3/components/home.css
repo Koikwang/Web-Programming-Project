@@ -1,0 +1,23 @@
+#profile-icon {
+    width: 80px;
+    height: 80px;
+    /* border: 1px red solid; */
+}
+
+#promo {
+    display: flex;
+    border: 4px green solid;
+    align-items: center;
+}
+
+.promo-img {
+    width: 100%;
+    /* border: 1px green solid; */
+}
+
+.data-table {
+    overflow: scroll;
+    height: 100%;
+    border: 4px green solid;
+    margin: 20px;
+}

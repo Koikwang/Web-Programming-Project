@@ -1,0 +1,47 @@
+*
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.brandlogo /*7-11 logo*/
+{
+    height: 140px;
+    width: 140px;
+    background: url("https://www.7eleven.co.th/static/imgs/logo.svg");
+    background-position: center; 
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px #cbced1, -5px -5px 8px white;
+}
+.brandname /*7-11 name*/
+{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+.login-container /*form to input*/
+{   
+    text-align: center;
+    border-radius: 70px;
+    padding: 40px;
+    width: 300px;
+    background: #00a550;
+    justify-content: center;
+    display: flex;
+    opacity: 0.9;
+    line-height: 20pt;    
+}
+.name
+{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.out {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

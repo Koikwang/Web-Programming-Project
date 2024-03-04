@@ -1,0 +1,130 @@
+/* all */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* header tag */
+header {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 9px rgb(134, 129, 129);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* h1 tag */
+h1, h4 {
+    text-align: center;
+}
+
+/* arrange content form */
+.box {
+    background-color: white;
+    box-shadow: 0px 0px 9px rgb(134, 129, 129);
+    border-radius: 40px;
+    padding: 25px;
+    margin: 20px;  
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    float: right;
+}
+
+.form {
+    padding-bottom: 20px;
+    
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input[type=button] {
+    margin: 3px;
+}
+
+ /* Product Output */
+
+ #pro_output {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .probox {
+    background-color: white;
+    box-shadow: 0px 0px 9px rgb(134, 129, 129);
+    border-radius: 40px;
+    margin: 10px; 
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+
+p.product {
+    color: black;
+}
+
+img.product {
+    width: 15%;
+    height: auto;
+}
+
+.one {
+    padding:20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.two {
+    margin-top: 60px;
+    padding-left: 15px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* found items text */
+#found {
+    color: black;
+    background-color: rgb(224, 224, 224);
+    opacity: 0.75;
+    
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    justify-content: flex-start;
+}
+
+/* body-Background Image */
+body {
+    color: #00a550;
+    
+    background: url(image-1/stardew-valley-bg1.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+select
+{
+    margin-top: 5px;
+    margin-left: 109px;
+}
+.double-two
+{
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+select#user_title {
+    margin-left: 107px;
+    margin-top: 7px;
+}
